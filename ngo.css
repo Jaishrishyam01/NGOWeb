@@ -1,0 +1,612 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    background-color: rgba(19, 18, 18, 0.902);
+    height: 200px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 99;
+    box-shadow: 0px 0px 5px  rgba(19, 18, 18, 0.902) ;
+    overflow: hidden;
+}
+.nav-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.nav1-a{
+ margin-left: 6rem;
+ font-size: 1rem;
+ margin-top: 1rem;
+ color: blanchedalmond;
+}
+.nav1-b{
+    margin-right: 6rem;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+}
+.nav1-b_list, .nav2_list{
+    display: flex;
+    list-style: none;
+}
+.link_list{
+    padding-left: 0.8rem;
+    /* border-left: 1px solid bisque; */
+}
+.link_list i{
+    transition: color 0.6s;
+}
+.link_list i:hover{
+    color: rgb(140, 151, 222);
+}
+.nav-1 a{
+    text-decoration: none;
+    color: bisque;
+    padding-right: 20px;
+}
+.nav-2{
+border: 2px solid white;
+border-radius: 2px;
+background-color: white;
+padding: 2rem 2rem 2rem 2rem;
+margin: 2rem 2rem 2rem 4rem;
+display: flex;
+justify-content: space-evenly;
+align-self: center;
+height: 120px;
+width: 90%;
+}
+
+
+.main-logo{
+    background-image: url("radhe1.png");
+    background-size: cover;
+    height: 110px;
+    width: 130px;
+    margin-left: 9px;
+    margin-bottom: 0.7rem;
+    margin-right: 30px;
+    margin-top: 0.01rem;
+   
+}
+.nav-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.nav-2_list{
+    display: flex;
+}
+.nav2_list{
+    padding-left: 0.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-left: 1px solid  rgba(35, 36, 37, 0.894);
+}
+.nav-2 a{
+    padding-right: 22px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.994);
+    font-size: 1.2rem;
+    font-weight:lighter;
+    transition: color 0.5s;
+}
+.nav-2 a:hover{
+    color: chocolate;
+}
+.but{
+    border:none;
+    border-radius: 25px;
+     padding: 10px 35px;
+     margin: 4px 2px;
+     font-size: 1.5rem;
+     background-color: rgb(227, 171, 29) ;
+     cursor: pointer;
+     transition:background-color 0.6s;
+}
+.but a{
+    color: aliceblue;
+    font-size: 1.1rem;
+    position: relative;
+    left: 9px;
+    bottom: 3px;
+}
+.but:hover{
+    background-color: black;
+}
+.galleryWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+}
+#nextbtn, #backbtn{
+    position: relative;
+    top: 6rem;
+    margin: 40px;
+    cursor: pointer;
+    font-size: 35px;
+}
+#backbtn{
+  position: relative;
+  left: 30px;
+}
+.gallery {
+    display: flex;
+    width: 1500px;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 120%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    padding: 10px;
+    flex:none ;
+}
+.gallery div img{
+    /* background-image: url("img1.jpg"); */
+    height: 520px;
+    width: 130%;
+    /* background-size: cover; */
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-end; */
+    /* overflow: hidden; */
+    margin-top: 252px;
+    margin-left: 68px;
+    border-radius: 3px;
+    z-index: -95;
+    /* overflow-x: scroll; */
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+/* .img_msg h3, .img_msg h4{
+    background-color:black;
+} */
+.img_msg{
+    /* color: rgb(238, 232, 240); */
+    /* background-color:black; */
+    position: relative;
+    bottom: 16rem;
+    left: 38rem;
+    color: #fffefecb;
+background: -webkit-gradient(linear, left top, right top, from(#e6e6e6e6), to(#1d1c1c), color-stop(0.9, #ffffff)) no-repeat;
+background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.9, #fff)) no-repeat;
+background-size: 110px 100%;
+-webkit-background-clip: text;
+background-clip: text;
+animation: flick 2.5s infinite;
+}
+@keyframes flick {
+    0% {
+      background-position: top left;
+    }
+    100% {
+      background-position: top right;
+    }
+    }
+.img_msg h3{
+    font-family: 'Permanent Marker', Courier, monospace;
+    font-size:2.6rem ;
+}
+.img_msg h4{
+    font-size: 2rem;
+    font-family:'Frank Ruhl Libre', Courier, monospace;
+}
+.promoLine{
+    font-family: 'Poppins', Courier, monospace;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 30px; */
+    position: relative;
+    bottom: 3rem;
+}
+.nestedPromo1 h1{
+    color: black;
+    margin-right: 2px;
+    font-size: 3.5rem;
+}
+.nestedPromo2 h1{
+    color: darkgoldenrod;
+    margin-left: 6px;
+    font-size: 3.5rem;
+}
+
+.faci_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4.8rem;
+    margin-left: 4.5rem;
+    margin-right: 4.5rem;
+}
+.healthcare{
+    margin-left: 3rem;
+    padding: 38px 6px 4px 6px;
+    transition: box-shadow 2s;
+    /* height: 100px; */
+}
+.healthcare h2{
+    position: relative;
+    left: 4rem;
+    bottom: 0.75rem;
+    font-size: 2.5rem;
+}
+.healthcare p{
+    font-size: 1.2rem;
+    opacity: 0.7;
+    font-family: 'Domine', Courier, monospace;
+    padding-left: 0.6rem;
+}
+.healthcare i{
+    position: relative;
+    left: 8rem;
+    bottom: 2rem;
+    font-size: 60px;
+}
+.seniorciti{
+    margin-left: 2rem;
+    padding: 38px 4px 4px 6px;
+    transition: box-shadow 2s;
+}
+.seniorciti i{
+    position: relative;
+    left: 8.4rem;
+    bottom: 2rem;
+    font-size: 60px;
+}
+.seniorciti h2{
+    position: relative;
+    left: 3rem;
+    bottom: 0.75rem;
+    font-size: 2.5rem;
+}
+.seniorciti p{
+    font-size: 1.2rem;
+    opacity: 0.7;
+    font-family: 'Domine', Courier, monospace;
+}
+.education{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 38px 4px 4px 6px;
+    transition: box-shadow 2s;
+}
+.education i{
+    position: relative;
+    left: 8.4rem;
+    bottom: 2rem;
+    font-size: 60px;
+}
+.education h2{
+    position: relative;
+    left: 4.8rem;
+    bottom: 0.75rem;
+    font-size: 2.5rem;
+}
+.education p{
+    font-size: 1.2rem;
+    opacity: 0.7;
+    font-family: 'Domine', Courier, monospace;
+}
+.healthcare:hover{
+box-shadow: 0px 0px 6px black;
+}
+.seniorciti:hover{
+box-shadow: 0px 0px 6px black;
+}
+.education:hover{
+box-shadow: 0px 0px 6px black;
+}
+.envir h2{
+    font-size: 1.8rem;
+    position: relative;
+    left: 1.9rem;
+}
+.gosh h2{
+    font-size: 2rem;
+}
+.gosh i{
+    position: relative;
+    left: 6.5rem;
+}
+.relief h2{
+    font-size: 1.8rem;
+    position: relative;
+    left: 2.6rem;
+}
+.relief i{
+    position: relative;
+    left: 6rem;
+}
+.aboutNgo{
+    display: flex;
+    justify-content:space-between;
+    align-content:center;
+    height:300px;
+    /* background-color: darkturquoise; */
+    margin-top: 4rem;
+}
+.seniorcitiPhoto{
+    background-image: url("ngo.jpg");
+    height: 290px;
+    width: 130%;
+    background-size: cover;
+    background-color: darkturquoise;
+    margin-bottom: 10rem;
+    margin-left: 2rem;
+}
+.aboutNgo_msg{
+    font-size: 1.3rem;
+    padding: 30px 8rem 2px 2rem;
+    margin-left: 6rem;
+    background-color: cornflowerblue;
+    margin-right: 3rem;
+    font-family: 'Signika Negative', Courier, monospace;
+}
+.aboutNgo_msg h3{
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+.concerns h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+}
+span{
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+.concern1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: burlywood;
+    padding: 3rem 0px 3rem 0px;
+    
+}
+.concern1Photo{
+    background-image: url("goshala.jpg");
+    width: 200%;
+    height: 300px;
+    margin-left: 2rem;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 1.7rem;
+    background-size: cover;
+}
+.concern1Msg{
+    font-size: 1.2rem;
+    margin: 0px 4rem 0px 4rem;
+    font-family: 'Signika Negative', Courier, monospace;
+    font-weight: 800;
+}
+.concern1Msg h3{
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans', Courier, monospace;
+  
+}
+.solution1{
+    margin-top: 0.6rem;
+    font-family: 'Signika Negative', Courier, monospace;
+}
+.concern2Photo{
+    background-image: url("senior.png");
+    width: 250%;
+    height: 300px;
+    margin-right: 2rem;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 1.4rem;
+    background-size: cover;
+}
+.footerPhotos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+}
+.photo1{
+    background-image: url("photo1.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+.photo2{
+    background-image: url("photo2.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 250px;
+}
+.photo3{
+    background-image: url("photo3.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+.photo4{
+    background-image: url("photo4.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+.photo5{
+    background-image: url("photo5.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+.photo6{
+    background-image: url("photo6.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+}
+.footer{
+    background-color: rgb(37, 27, 27);
+    height: 520px;
+}
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerlogoRk{
+    background-image: url("logo3-removebg-preview.png");
+    height: 200px;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    margin-top: 1.8rem;
+    position: relative;
+    left: 0.85rem;
+}
+.footerSoci{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-left: 1rem;
+    position: relative;
+    top: 1rem;
+    font-size:2rem;
+    left: 2rem;
+    width: 50%;
+    background-color: #1d1c1c;
+    opacity: 1.3;
+}
+.footersoci1{
+    opacity: 1.2;
+    transition: color 0.7s;
+}
+.footersoci1:hover{
+   color: blueviolet;
+   cursor: pointer;
+}
+.footerMsg{
+    position: relative;
+   bottom: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    left: 5rem;
+    width: 50%;
+    opacity: 0.9;
+}
+.quickLinks{
+    color: white;
+    width: 50%;
+    position: relative;
+    right: 1.3rem;
+    top: 1.7rem;
+    cursor: pointer;
+
+}
+.quickLinks li{
+    opacity: 0.9 ;
+    transition:opacity 0.5s,text-decoration 0.6s ;
+}
+.quickLinks li:hover{
+    text-decoration: underline;
+    opacity: 1.2;
+}
+.quickLinks h3{
+    padding-top: 1rem;
+    position: relative;
+    bottom: 1.3rem;
+    font-size: 1.6rem;
+}
+.quickLinks ul li{
+    padding-bottom: 0.65rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    list-style: none;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts{
+width: 50%;
+color: white;
+position: relative;
+right: 4rem;
+top: 1.2rem;
+}
+.contacts h3{
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+}
+.address i{
+   padding-right: 1rem;
+   font-size: 1.6rem;
+   position: relative;
+   bottom: 1.5rem;
+}
+.address{
+    font-size: 1.2rem;
+    width: 60%;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+.call{
+    font-size: 1.2rem;
+    width: 70%;
+    position: relative;
+    right: 1rem;
+    opacity: 0.9;
+}
+.call i, .email i{
+    padding-right:0.6rem ;
+}
+.email{
+    width: 70%;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    position: relative;
+    right: 1.5rem;
+    opacity: 0.9;
+}
+.footer2{
+    background-color:rgb(37, 27, 27) ;
+    border-top: rgba(190, 170, 170, 0.847) 2px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    /* height: 20px; */
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
+.copyright, .terms{
+    color: white;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+.copyright a{
+    color:darkgoldenrod;
+    text-decoration: none;
+}
+
