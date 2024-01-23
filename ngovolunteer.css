@@ -84,24 +84,29 @@ width: 90%;
    
 }
 .nav-2_list{
-    display: flex;
+    display:inline-flex;
 }
 .nav2_list{
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
     text-decoration: none;
     text-transform: uppercase;
-    border-left: 1px solid  rgba(35, 36, 37, 0.894);
+    width: 120px;
+    border: none;
 }
-.nav-2 a{
-    padding-right: 22px;
+.nav2-links ul li a{
+    padding: 8px;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.994);
     font-size: 1.2rem;
     font-weight:lighter;
-    transition: color 0.5s;
+    transition: background-color 0.2s;
+    border-left: 1px solid  rgba(35, 36, 37, 0.894);
 }
-.nav-2 a:hover{
-    color: chocolate;
+.nav2-links ul li a:hover{
+    background-color: chocolate;
+    /* padding: 0.2rem; */
+    border-radius: 20px;
+    color:rgba(19, 18, 18, 0.902);
 }
 .but{
     border:none;
@@ -117,8 +122,8 @@ width: 90%;
     color: aliceblue;
     font-size: 1.1rem;
     position: relative;
-    left: 9px;
     bottom: 3px;
+   text-decoration: none;
 }
 .but:hover{
     background-color: black;
