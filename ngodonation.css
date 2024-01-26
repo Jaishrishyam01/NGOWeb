@@ -214,8 +214,10 @@ left: 3.9rem;
 .donForm-3 label{
     font-size: 1.1rem;
     /* padding: 1rem; */
-    display: flex;
+    display: block;
     flex-direction: column;
     margin: 1rem;
-    
+}
+.donForm-3 input{
+    margin-right: 15px;
 }
