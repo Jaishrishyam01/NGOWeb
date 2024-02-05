@@ -268,11 +268,13 @@ animation: flick 2.5s infinite;
     transition: box-shadow 2s;
     /* height: 100px; */
 }
-.healthcare h2{
+.healthcare h2 a{
     position: relative;
-    left: 4rem;
+    left: 2.3rem;
     bottom: 0.75rem;
     font-size: 2.5rem;
+    color: #1d1c1c;
+    text-decoration: none;
 }
 .healthcare p{
     font-size: 1.2rem;
@@ -282,7 +284,7 @@ animation: flick 2.5s infinite;
 }
 .healthcare i{
     position: relative;
-    left: 8rem;
+    left: 6rem;
     bottom: 2rem;
     font-size: 60px;
 }
@@ -297,11 +299,13 @@ animation: flick 2.5s infinite;
     bottom: 2rem;
     font-size: 60px;
 }
-.seniorciti h2{
+.seniorciti h2 a{
     position: relative;
     left: 3rem;
     bottom: 0.75rem;
     font-size: 2.5rem;
+    color: #1d1c1c;
+    text-decoration: none;
 }
 .seniorciti p{
     font-size: 1.2rem;
@@ -320,11 +324,13 @@ animation: flick 2.5s infinite;
     bottom: 2rem;
     font-size: 60px;
 }
-.education h2{
+.education h2 a{
     position: relative;
     left: 4.8rem;
     bottom: 0.75rem;
     font-size: 2.5rem;
+    color: #1d1c1c;
+    text-decoration: none;
 }
 .education p{
     font-size: 1.2rem;
@@ -340,22 +346,28 @@ box-shadow: 0px 0px 6px black;
 .education:hover{
 box-shadow: 0px 0px 6px black;
 }
-.envir h2{
+.envir h2 a{
     font-size: 1.8rem;
     position: relative;
     left: 1.9rem;
+    color: #1d1c1c;
+    text-decoration: none;
 }
-.gosh h2{
+.gosh h2 a{
     font-size: 2rem;
+    color: #1d1c1c;
+    text-decoration: none;
 }
 .gosh i{
     position: relative;
     left: 6.5rem;
 }
-.relief h2{
+.relief h2 a{
     font-size: 1.8rem;
     position: relative;
     left: 2.6rem;
+    color: #1d1c1c;
+    text-decoration: none;
 }
 .relief i{
     position: relative;

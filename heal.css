@@ -1,0 +1,530 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    background-color: rgba(19, 18, 18, 0.902);
+    height: 200px;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 99;
+    box-shadow: 0px 0px 5px  rgba(19, 18, 18, 0.902) ;
+    overflow: hidden;
+}
+.nav-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.nav1-a{
+ margin-left: 6rem;
+ font-size: 1rem;
+ margin-top: 1rem;
+ color: blanchedalmond;
+}
+.nav1-b{
+    margin-right: 6rem;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+}
+.nav1-b_list, .nav2_list{
+    display: flex;
+    list-style: none;
+}
+.link_list{
+    padding-left: 0.8rem;
+    /* border-left: 1px solid bisque; */
+}
+.link_list i{
+    transition: color 0.6s;
+}
+.link_list i:hover{
+    color: rgb(140, 151, 222);
+}
+.nav-1 a{
+    text-decoration: none;
+    color: bisque;
+    padding-right: 20px;
+}
+.nav-2{
+border: 2px solid white;
+border-radius: 2px;
+background-color: white;
+padding: 2rem 2rem 2rem 2rem;
+margin: 2rem 2rem 2rem 4rem;
+display: flex;
+justify-content: space-evenly;
+align-self: center;
+height: 120px;
+width: 90%;
+}
+
+
+.main-logo{
+    background-image: url("radhe1.png");
+    background-size: cover;
+    height: 110px;
+    width: 130px;
+    margin-left: 9px;
+    margin-bottom: 0.7rem;
+    margin-right: 30px;
+    margin-top: 0.01rem;
+   
+}
+.nav-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.nav2_list{
+    display: inline-flex;
+}
+.nav2_list{
+    /* padding-left: 0.1rem; */
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 120px;
+    border: none;
+}
+.nav2-links ul li a{
+    padding: 8px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.994);
+    font-size: 1.2rem;
+    font-weight:lighter;
+    transition: background-color 0.2s;
+    border-left: 1px solid  rgba(35, 36, 37, 0.894);
+}
+.nav2-links ul li a:hover{
+   background-color: chocolate;
+   /* padding: 0.2rem; */
+   border-radius: 20px;
+   color:rgba(19, 18, 18, 0.902);
+}
+.submenu{
+    right:0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 200;
+    list-style: none;
+    border: none;
+    /* transition: all 0.5s ease; */
+}
+li:hover ul.submenu{
+    opacity: 1;
+    top: 80px;
+    visibility: visible;
+}
+.submenu li{
+    float: left;
+    width: 100%;
+}
+
+.but{
+    border:none;
+    border-radius: 25px;
+     padding: 10px 35px;
+     margin: 4px 2px;
+     font-size: 1.5rem;
+     background-color: rgb(227, 171, 29) ;
+     cursor: pointer;
+     transition:background-color 0.6s;
+     
+}
+.but a{
+    color: aliceblue;
+    font-size: 1.1rem;
+    position: relative;
+    bottom: 3px;
+    text-decoration: none;
+}
+.but:hover{
+    background-color: black;
+}
+.healimg{
+    background-image: url("heal1.jpeg");
+    width: 85%;
+    background-size: cover;
+    height: 550px;
+    margin-top: 15rem;
+    margin-left: 7rem;
+    margin-right: 4rem;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+.heal_msg{
+    /* background-color: rgba(181, 179, 179, 0.369); */
+    /* border-radius:9px ; */
+    font-family: 'Protest Revolution', Courier, monospace;
+color:white ;
+position: absolute;
+top: 80%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+padding: 20px;
+text-align: center;
+font-size: 3rem;
+}
+.heal_msg h2{
+    font-family: 'Protest Riot', Courier, monospace;
+    letter-spacing: 0.5rem;
+}
+.glow {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 7px #fff, 0 0 16px #fff, 0 0 27px #e60073, 0 0 37px #e60073, 0 0 47px #e60073, 0 0 54px #e60073, 0 0 64px #e60073;
+    }
+    to {
+      text-shadow: 0 0 16px #fff, 0 0 26px #ff4da6, 0 0 36px #ff4da6, 0 0 46px #ff4da6, 0 0 56px #ff4da6, 0 0 66px #ff4da6, 0 0 76px #ff4da6;
+    }
+  }
+  .heal_quote{
+    display: block;
+  }
+  .heal_quote h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto Slab', Courier, monospace;
+    position: absolute;
+    top: 127%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:#f7efe5f6;
+    border-radius: 9px;
+    width: 85%;
+    height: 10%;
+    padding: 5px;
+  }
+  .heal_quote h4{
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Roboto Slab', Courier, monospace;
+    position: absolute;
+    top: 141%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+  }
+  .heal_quote h2{
+    text-align: center;
+    font-size: 2.8rem;
+    font-family: 'Roboto Slab', Courier, monospace;
+    position: absolute;
+    top: 152%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .heal_quote h3{
+    text-align:left;
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', Courier, monospace;
+    position: absolute;
+    top: 168%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+  }
+  .flex{
+    display: flex;
+    float: left;
+  }
+  .heal_faci{
+    position: absolute;
+    top: 200%;
+    background-color: #92C7CF;
+    height: 165%;
+    width: 100%;
+  }
+  .faci_1img{
+    background-image: url("heal2.png");
+    background-size: cover;
+    height: 22rem;
+    width: 40rem;
+  }
+span{
+    display: block;
+    width: 50%;
+    font-size:1.4rem ;
+    margin-top: 3rem;
+    /* margin: 8px; */
+}
+span h2{
+    font-size: 2.7rem;
+    padding-bottom: 9px;
+}
+.faci_2img{
+    background-image: url("heal3.png");
+    background-size: cover;
+    height: 22rem;
+    width: 40rem;
+    margin-top: 20px;
+}
+.faci_2 span{
+    margin: 50px;
+    /* padding: 15px; */
+    font-size: 1.3rem;
+    width: 55%;
+}
+.faci_3img{
+    background-image: url("heal4.png");
+    background-size: cover;
+    height: 22rem;
+    width: 40rem;
+}
+
+.flex1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   margin-top: 112rem;
+}
+.flex2{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+    
+   margin-top: 2rem;
+}
+.card {
+    /* position: relative;
+    top: 370%;
+    left: 4%; */
+    width: 300px;
+    height: 200px;
+    background-color: #c2bbbb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* background-image: url("heal1.jpeg");
+    background-size: cover;
+    box-sizing: content-box; */
+  }
+  .card i{
+    font-size: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .card svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+
+  
+.footer{
+    background-color: rgb(37, 27, 27);
+    height: 520px;
+    margin-top: 2rem;
+}
+.footer1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerlogoRk{
+    background-image: url("logo3-removebg-preview.png");
+    height: 200px;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 50px;
+    margin-top: 1.8rem;
+    position: relative;
+    left: 0.85rem;
+}
+.footerSoci{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-left: 1rem;
+    position: relative;
+    top: 1rem;
+    font-size:2rem;
+    left: 2rem;
+    width: 50%;
+    background-color: #1d1c1c;
+    opacity: 1.3;
+}
+.footersoci1{
+    opacity: 1.2;
+    transition: color 0.7s;
+}
+.footersoci1:hover{
+   color: blueviolet;
+   cursor: pointer;
+}
+.footerMsg{
+    position: relative;
+   bottom: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    left: 5rem;
+    width: 50%;
+    opacity: 0.9;
+}
+.quickLinks{
+    color: white;
+    width: 50%;
+    position: relative;
+    right: 1.3rem;
+    top: 1.7rem;
+    cursor: pointer;
+
+}
+.quickLinks li{
+    opacity: 0.9 ;
+    transition:opacity 0.5s,text-decoration 0.6s ;
+}
+.quickLinks li:hover{
+    text-decoration: underline;
+    opacity: 1.2;
+}
+.quickLinks h3{
+    padding-top: 1rem;
+    position: relative;
+    bottom: 1.3rem;
+    font-size: 1.6rem;
+}
+.quickLinks ul li{
+    padding-bottom: 0.65rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    list-style: none;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts{
+width: 50%;
+color: white;
+position: relative;
+right: 4rem;
+top: 1.2rem;
+}
+.contacts h3{
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+}
+.address i{
+   padding-right: 1rem;
+   font-size: 1.6rem;
+   position: relative;
+   bottom: 1.5rem;
+}
+.address{
+    font-size: 1.2rem;
+    width: 60%;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+.call{
+    font-size: 1.2rem;
+    width: 70%;
+    position: relative;
+    right: 1rem;
+    opacity: 0.9;
+}
+.call i, .email i{
+    padding-right:0.6rem ;
+}
+.email{
+    width: 70%;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    position: relative;
+    right: 1.5rem;
+    opacity: 0.9;
+}
+.footer2{
+    background-color:rgb(37, 27, 27) ;
+    border-top: rgba(190, 170, 170, 0.847) 2px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    /* height: 20px; */
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 3rem;
+}
+.copyright, .terms{
+    color: white;
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+.copyright a{
+    color:darkgoldenrod;
+    text-decoration: none;
+}
+
+
+  
