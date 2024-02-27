@@ -36,7 +36,7 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000);
 }
-function myfunction(){
-    window.open("./heal.html","_self");
-}
-setTimeout(myfunction,5000);
+// function heal(){
+//     window.open("./heal.html","_self");
+// }
+// setTimeout(heal(),5000);

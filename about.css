@@ -529,7 +529,147 @@ li:hover ul.submenu{
   .card1:hover::before {
     transform: rotate(-90deg) scaleX(1.10) scaleY(0.90);
   }
-  .footer{
+  .card2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top:7%;
+  }
+  .about_Card {
+    position: relative;
+    width: 190px;
+    height: 254px;
+    background: #f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    border-radius: 10px;
+  }  
+  .about_Card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+  }
+  
+  .about_Card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+    /* filter: blur(10px); */
+  }
+  
+  .about_Card b {
+    position: absolute;
+    inset: 6px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+  
+  .about_Card img {
+    position: absolute;
+    z-index: 3;
+    scale: 0.8;
+    /* opacity: 0.25; */
+    transition: 0.5s;
+    box-sizing: content-box;
+    background-size: contain;
+    width: 100%;
+    height: 80%;
+  }
+  
+  .about_Card:hover img {
+    scale: 0.5;
+    /* opacity: 0.9; */
+    transform: translateY(-70px);
+  }
+  
+  .about_Card .content {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.5s;
+  }
+  
+  .about_Card:hover .content {
+    transform: scale(1);
+    bottom: 25px;
+  }
+  
+  .content .title {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    line-height: 0.4em;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 9px;
+  }
+  
+  .content .title span {
+    font-weight: 300;
+    font-size: 0.8em; 
+  }
+  
+  .content .sci {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+    margin-right: 1%;
+  }
+  
+  .sci li {
+    list-style: none;
+  }
+  .sci{
+    margin-right: 3%;
+  }
+  
+  .sci li .fa-brands {
+    width: 14px;
+  }
+  
+  .sci li .fa-facebook {
+    width: 10px;
+  }
+  .sci li a {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.2);
+    fill: currentColor;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: 0.5s;
+  }
+  
+  .sci li a:hover {
+    fill: currentColor;
+    color: rgba(255, 255, 255, 1);
+  }
+  
+.footer{
     background-color: rgb(37, 27, 27);
     height: 520px;
     margin-top: 2rem;
