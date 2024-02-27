@@ -425,7 +425,7 @@ li:hover ul.submenu{
     padding-left: 4rem;
     padding-right: 5.3rem;
     margin-bottom: 22px;
-    color: #D6D46D;
+    color: #96943fd0;
 }
 .para3 p{
     font-size: 1.4rem;
@@ -433,12 +433,12 @@ li:hover ul.submenu{
     padding-right: 5.3rem;
     margin-bottom: 22px;
     margin-top: 20px;
-    color: #D6D46D;
+    color: #96943fd0;
 }
 .para3 font{
     position: relative;
     left: 5%;
-    color: #9A4444;
+    color: #E36414;
 }
 .about_us h3{
     position: absolute;
@@ -448,7 +448,7 @@ li:hover ul.submenu{
     padding-right: 5.3rem;
     margin-bottom: 22px;
     margin-top: 20px;
-    color: #9A4444;
+    color: #E36414;
     text-transform:capitalize ;
 }
 .cards{
